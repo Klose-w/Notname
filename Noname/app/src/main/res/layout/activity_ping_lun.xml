@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="350dp"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:descendantFocusability= "blocksDescendants"
+    android:layout_gravity="center"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        >
+        <TextView
+            android:id="@+id/pltitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="校园卡"
+            android:textSize="30dp"
+            android:textColor="#44aaaa"
+            android:layout_gravity="left|center"
+            android:layout_marginLeft="5dp"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="15dp"
+            android:textColor="#44aaaa"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="10dp"/>
+        <Button
+            android:id="@+id/plbut"
+            android:layout_width="60dp"
+            android:textSize="15dp"
+            android:text="评论"
+            android:background="#00ffffff"
+            android:textColor="#aa0000"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#aaaaaa"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:layout_marginLeft="5dp">
+        <TextView
+            android:id="@+id/pltalk"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:textSize="17dp"
+            android:textColor="#000000"
+            android:text="丢失了一张校园卡"
+            />
+    </LinearLayout>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#aaaaaa"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_marginLeft="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时间:"
+            android:textSize="12dp"/>
+        <TextView
+            android:id="@+id/pltalktime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-4-15"
+
+            android:textSize="12dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评论:"
+            android:textSize="12dp"/>
+        <TextView
+            android:id="@+id/plnum1"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="北校操场"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        >
+        <ListView
+            android:id="@+id/pllist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="#00ffffff"
+            android:listSelector="#88d0ff"
+            android:dividerHeight="15px"/>
+    </LinearLayout>
+
+
+</LinearLayout>
